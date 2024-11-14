@@ -1,0 +1,42 @@
+.flexbox{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.fit-content{
+    height: fit-content;
+}
+.font{
+    font-size: 12px;
+    font-family: 'poppins',sans-serif;
+}
+.font_Weight{
+    font-weight: bold;
+}
+.searchwidth{
+    width: 100%;
+}
+.searchBox{
+    border: 2px solid black;
+    width: 20%;
+    height: 3rem;
+}
+.searchForm{
+    width: 100%;
+    height: fit-content;
+}
+.btnLayout{
+    border-radius: 15px;
+    width: 50px;
+    height:3rem;
+}
+
+
+.headerBox{
+    border: 2px solid black;
+    height: 8rem;
+    width: 100vw;
+}
+input{
+    height: 2.5rem;
+}
