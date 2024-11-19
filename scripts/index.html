@@ -11,30 +11,158 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
 </head>
 
 <body>
-    <div class="headerBox flexbox font">
-        <div class="logo">
-            <h1>Protfolio</h1>
-        </div>
+    <header>
+        <!-- header section-->
+        <div class="headerBox d-flex justify-content-evenly align-items-center">
+            <div class="logo font">
+                <h1>Protfolio</h1>
+            </div>
 
-        <div class="links">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Contact</a></li>
+            <div class="links">
+                <ul class="nav justify-content-center">
+                    <li class="btn btn-light"><a class="size font" href="#">Home</a></li>
+                    <li class="btn btn-light"><a class=" size font" href="#">Gallery</a></li>
+                    <li class="btn btn-light"><a class="size font" href="#">Contact</a></li>
 
-            </ul>
+                </ul>
+            </div>
         </div>
+    </header>
 
-        <div class="searchBox flexbox">
-            <form class="searchForm flexbox" role="search">
-                <input class="searchwidth" type="search" placeholder="Search" aria-label="Search">
-                <button class="btnLayout" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </form>
-        </div>
-    </div>
+
+    <main>
+        <!--landing page-->
+        <section class="container-xxl d-flex justify-content-center align-items-center">
+            <div class="box d-flex justify-content-evenly align-items-center">
+                <div class="info font ">
+                    <p> <span>Yamie nyirenda</span> is a Senior</p>
+                    <p>software developer at NACIT</p>
+                    <p>Lilongwe</p>
+                </div>
+                <div class="image">
+                    <img src="#" alt="profile">
+                </div>
+            </div>
+
+        </section>
+        <!--about section-->
+        <section class="container-xxl d-flex justify-content-center align-items-center">
+            <div class="box d-flex justify-content-evenly align-items-center">
+                <div class="image">
+
+                    <dotlottie-player src="https://lottie.host/c9037871-3f2c-4ace-8210-f92494444b64/xT8ORtBOOD.json"
+                        background="transparent" speed="1" style="width: 300px; height: 300px;" loop
+                        autoplay></dotlottie-player>
+                </div>
+                <div class="info">
+                    <p>A Young Developer from</p><br><br>
+                    <span class="f-size font-weight font">Malawi</span><br><br>
+                    <p class="line-h">
+                        Growing up in Lilongwe, Malawi, Yamikani Nyirenda shows that big dreams can come true with hard
+                        work. Born in 2003, this young tech lover turns big ideas into amazing digital projects through
+                        his skills in coding, design, and creating user-friendly websites and apps. Whether he's
+                        designing beautiful logos, making websites easier to use, or building new digital tools,
+                        Yamikani puts his heart into every project. His story shows that young people from Africa can
+                        shape the future of technology, one creative project at a time.</p>
+                </div>
+            </div>
+        </section>
+        <!--service section-->
+        <section class="container-xxl d-flex flex-column justify-content-evenly align-items-center">
+            <div class="heading">
+                <h1>My Services</h1>
+            </div>
+            <div class="cards d-flex align-items-center justify-content-evenly">
+                <div class="card d-flex align-items-center">
+                    <img src="../images/align-center-horizontal-fill.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">UI&UX</h5>
+                        <p class="card-text">Turning complex problems into beautiful, simple solutions. Bringing your
+                            bold ideas to life through powerful code.</p>
+                    </div>
+                </div>
+                <div class="card d-flex align-items-center">
+                    <img src="../images/chart-line-up-duotone.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Marketing</h5>
+                        <p class="card-text">Helping your brand tell stories that inspire and connect. Taking your
+                            message further, reaching hearts and minds.</p>
+                    </div>
+                </div>
+                <div class="card d-flex align-items-center">
+                    <img src="../images/stack-fill.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Brand Design</h5>
+                        <p class="card-text">Creating designs that speak volumes without saying a word. Making your
+                            brand stand out in a crowded world.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--gullery section-->
+        <section class="container-xxl">
+
+        </section>
+        <!--workflow section-->
+        <section class="container-xxl d-flex flex-column justify-content-evenly align-items-center">
+            <div class="heading">
+                <h1>Work-Flow</h1>
+            </div>
+            <div class="cards d-flex align-items-center justify-content-evenly">
+                <div class="card d-flex align-items-center">
+                    <img src="../images/align-center-horizontal-fill.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">6+</h5>
+                        <p class="card-text">Projects</p>
+                    </div>
+                </div>
+                <div class="card d-flex align-items-center">
+                    <img src="../images/chart-line-up-duotone.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">28</h5>
+                        <p class="card-text">Customers</p>
+                    </div>
+                </div>
+                <div class="card d-flex align-items-center">
+                    <img src="../images/stack-fill.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">3 years</h5>
+                        <p class="card-text">Experience</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--footer section-->
+        <section class="container-xxl">
+            <div class="con">
+                <div class="link1">
+                    <ul>
+                        <li><a href="#" class="size font">Gullery</a></li>
+                        <li><a href="#" class="size font">Contact</a></li>
+                        <li><a href="#" class="size font">Support</a></li>
+                    </ul>
+                </div>
+                <div class="link2">
+                    <ul>
+                        <li><a href="#"><i class="fa-brands size fa-github"></i></a></li>
+                        <li><a href="#"><i class="fa-brands size fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands size fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+                <br><br><br>
+                <p class="font">@yamieNyirenda</p>
+            </div>
+        </section>
+    </main>
 
 </body>
 
