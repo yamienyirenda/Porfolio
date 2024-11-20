@@ -18,7 +18,8 @@
     align-items: center;
     justify-content: center;
 }
-.f-size{
+
+.f-size {
     font-size: 80px;
 }
 
@@ -27,7 +28,8 @@
     color: rgb(2, 2, 2);
     text-decoration: none;
 }
-.line-h{
+
+.line-h {
     line-height: 32px;
 }
 
@@ -71,37 +73,39 @@ input {
 /* body section */
 
 section {
-    border: 2px solid black;
+    
     height: 80vh;
 }
 
 .box {
-    border: 2px red solid;
+    
     width: 100%;
     height: 40rem;
     margin-top: 20px;
 }
 
 .info {
-    
+
     width: 40%;
     height: 20rem;
     text-align: justify;
     line-height: 8px;
     padding: 40px;
 }
-span{
+
+span {
     font-size: 32px;
     color: #229799;
 }
 
 .image {
-       width: 40%;
+   
+    width: 50%;
     height: 20rem;
 }
 
 .cards {
-    border: 2px black solid;
+
     width: 80%;
     height: 20rem;
 }
@@ -127,7 +131,7 @@ span{
 }
 
 .link1 {
-  
+
     width: 80%;
     height: 8rem;
 }
@@ -172,10 +176,11 @@ span{
 }
 
 .link2 {
-    
+
     width: 80%;
     height: 8rem;
 }
+
 .link2>ul {
     list-style: none;
     width: 100%;
@@ -185,6 +190,7 @@ span{
     justify-content: space-evenly;
     align-items: center;
 }
+
 .link2>ul>li {
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
     background: #229799;
@@ -194,4 +200,33 @@ span{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.cont3 {
+
+    width: 20%;
+    height: 12rem;
+    position: absolute;
+    background-color: #22979983;
+}
+
+.cont4 {
+   
+    width: 60%;
+    height: 12rem;
+    position: relative;
+    background-image: url(../images/download\ \(3\).jpg);
+    background-position: center;
+    background-size:cover;
+    z-index: 15;
+    bottom: 40px;
+    right: 40px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.cont4>img {
+    background-position: center;
+    background-size: cover;
+    width: auto;
+    height: 12rem;
 }
