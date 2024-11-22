@@ -20,11 +20,11 @@
 }
 
 .f-size {
-    font-size: 80px;
+    font-size: 20px;
 }
 
 .size {
-    font-size: 20px;
+    font-size: 24px;
     color: rgb(2, 2, 2);
     text-decoration: none;
 }
@@ -94,7 +94,7 @@ section {
 }
 
 span {
-    font-size: 32px;
+    font-size: 40px;
     color: #229799;
 }
 
@@ -162,7 +162,7 @@ span {
 
 .link1>ul>li>a:hover {
     text-decoration: underline;
-    font-size: 24px;
+    font-size: 28px;
     color: #229799;
 }
 
@@ -204,7 +204,7 @@ span {
 
 .cont3 {
 
-    width: 20%;
+    width: 25%;
     height: 12rem;
     position: absolute;
     background-color: #22979983;
@@ -213,11 +213,11 @@ span {
 .cont4 {
    
     width: 60%;
-    height: 12rem;
+    height: 20rem;
     position: relative;
-    background-image: url(../images/download\ \(3\).jpg);
+    background-image: url(../images/skepta.jpg);
     background-position: center;
-    background-size:cover;
+    background-size:fill;
     z-index: 15;
     bottom: 40px;
     right: 40px;
@@ -229,4 +229,63 @@ span {
     background-size: cover;
     width: auto;
     height: 12rem;
+}
+.slider{
+    height: 250px;
+    margin: auto;
+    position: relative;
+    width: 90%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+.slide-track{
+    display: flex;
+    width: calc(250px * 18);
+    animation: scroll 40s linear infinite;
+}
+.slide-track:hover{
+    animation-play-state:paused ;
+}
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px * 9));
+    }
+}
+.slide{
+    height: 200px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    perspective: 100px;
+}
+img{
+    width: 100%;
+    transition: transform 1s;
+}
+img:hover{
+    transform: translateZ(20px);
+}
+/* gradient shadows*/
+.slider::before,
+.slider::after{
+    background: linear-gradient(to right, rgba(255,255,255,1)0%,rgba(255,255,255,0)100%);
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 2;
+}
+.slider::before{
+    left: 0;
+    top: 0;
+}
+.slider::after{
+    right: 0;
+    top: 0;
+    transform: rotate(180deg);
 }
