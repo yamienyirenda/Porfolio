@@ -601,28 +601,19 @@ img:hover {
     }
 
     .image {
-
         display: flex;
-        border: 2px red solid;
         width: 100%;
         align-items: center;
         justify-content: space-evenly;
-
-
     }
 
     p {
         font-size: 24px;
     }
-
     .cont4 {
         width: 60%;
         background-repeat: no-repeat;
-        border: 2px solid black;
-
-
     }
-
     .cont3 {
         display: none;
     }
