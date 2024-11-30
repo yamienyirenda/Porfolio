@@ -30,7 +30,9 @@ section {
     margin: 0;
     list-style: none;
 }
-
+.side-menue{
+    display: none;
+}
 .links li {
     margin: 0 15px;
 }
@@ -512,7 +514,7 @@ img:hover {
     }
 
     .slider {
-        margin-top: ;
+        
         height: 400px;
         width: 80%;
     }
