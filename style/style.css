@@ -323,11 +323,11 @@ span {
 .cont4 {
 
     width: 60%;
-    height: 20rem;
+    height: 24rem;
     position: relative;
-    background-image: url(../images/skepta.jpg);
+    background-image: url(../images/yami.jpg);
     background-position: center;
-    background-size: fill;
+    background-size: cover;
     z-index: 15;
     bottom: 40px;
     right: 40px;
