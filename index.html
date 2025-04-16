@@ -1,238 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="../style/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 
 <body>
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+    
     <header>
-        <!-- header section-->
-        <div class="headerBox d-flex justify-content-evenly align-items-center">
+        <div class="header-container">
             <div class="logo font">
-                <h1>Protfolio</h1>
+                <h1>Portfolio</h1>
             </div>
-
             <div class="links">
-                <ul class="nav justify-content-center">
-                    <li class="btn btn-light"><a class="size font" href="#">Home</a></li>
-                    <li class="btn btn-light"><a class=" size font" href="#">Gallery</a></li>
-                    <li class="btn btn-light"><a class="size font" href="#">Contact</a></li>
-
+                <ul class="nav-links">
+                    <li><a class="nav-link font" href="index.html">Home</a></li>
+                    <li><a class="nav-link font" href="gallery.html">Gallery</a></li>
+                    <li><a class="nav-link font" href="contact.html">Contact</a></li>
                 </ul>
-
             </div>
-            <div class="side-menue">
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+            </div>
+            <div class="side-menu">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </div>
     </header>
 
-
     <main>
-        <!--landing page-->
-        <section class="container-xxl d-flex justify-content-center align-items-center">
-            <div class="box d-flex justify-content-evenly align-items-center">
-                <div class="info font ">
-                    <p class="f-size font"> <span>Yamie nyirenda</span> is a Senior</p>
-                    <p class="f-size font">software developer at NACIT</p>
-                    <p>Lilongwe</p>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-container">
+                <div class="hero-info">
+                    <h1 class="hero-greeting">Hi, I'm <span class="hero-name">Yamie Nyirenda</span></h1>
+                    <div class="hero-text-wrapper">
+                        <p class="hero-text">I'm a <span id="typed-text"></span></p>
+                    </div>
+                    <p class="hero-location">Senior Developer at NACIT | Lilongwe, Malawi</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="cta-button">Hire Me</a>
+                        <a href="resume.pdf" download class="cta-button secondary">
+                            <i class="fas fa-download"></i> Download CV
+                        </a>
+                    </div>
                 </div>
-                <div class="image d-flex center">
-                    <div class="cont3"></div>
-                    <div class="cont4"></div>
+                <div class="hero-image">
+                    <div class="image-background"></div>
+                    <div class="profile-image"></div>
                 </div>
             </div>
-
         </section>
-        <br><br><br><br><br><br>
-        <!--about section-->
-        <section class="container-xxl d-flex justify-content-center align-items-center">
-            <div class="box d-flex justify-content-evenly align-items-center">
-                <div class="image">
 
+        <!-- About Section -->
+        <section class="about-section">
+            <div class="about-container">
+                <div class="about-animation">
                     <dotlottie-player src="https://lottie.host/c9037871-3f2c-4ace-8210-f92494444b64/xT8ORtBOOD.json"
                         background="transparent" speed="1" style="width: 300px; height: 300px;" loop
                         autoplay></dotlottie-player>
                 </div>
-                <div class="info">
-                    <p>A Young Developer from</p><br><br>
-                    <span class=" font-weight font">Malawi</span><br><br>
-                    <p class="line-h f-size font">
+                <div class="about-info">
+                    <p class="about-intro">A Young Developer from</p>
+                    <span class="about-country font">Malawi</span>
+                    <p class="about-bio">
                         Growing up in Lilongwe, Malawi, Yamikani Nyirenda shows that big dreams can come true with hard
                         work. Born in 2003, this young tech lover turns big ideas into amazing digital projects through
-                        his skills in coding, design, and creating user-friendly websites and apps. Whether he's
-                        designing beautiful logos, making websites easier to use, or building new digital tools,
-                        Yamikani puts his heart into every project. His story shows that young people from Africa can
-                        shape the future of technology, one creative project at a time.</p>
+                        his skills in coding, design, and creating user-friendly websites and apps.
+                    </p>
                 </div>
             </div>
         </section>
-        <br><br><br><br>
-        <!--service section-->
-        <section class="container-xxl d-flex flex-column justify-content-evenly align-items-center">
-            <div class="heading">
+
+        <!-- Stats Counter Section -->
+        <section class="stats-section">
+            <div class="stats-container">
+                <div class="stat">
+                    <span class="stat-number" data-target="28">0</span>
+                    <p>Happy Clients</p>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="15">0</span>
+                    <p>Completed Projects</p>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="3">0</span>
+                    <p>Years Experience</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services-section">
+            <div class="section-heading">
                 <h1>My Services</h1>
             </div>
-            <div class="cards d-flex align-items-center justify-content-evenly">
-                <div class="card d-flex align-items-center">
-                    <img src="../images/align-center-horizontal-fill.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title"><span>UI&UX</span></h5>
-                        <p class="f-size font">Turning complex problems into beautiful, simple solutions. Bringing your
-                            bold ideas to life through powerful code.</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="../images/align-center-horizontal-fill.png" alt="UI/UX Design">
+                    <div class="card-content">
+                        <h3><span>UI&UX</span></h3>
+                        <p>Turning complex problems into beautiful, simple solutions.</p>
                     </div>
                 </div>
-                <div class="card d-flex align-items-center">
-                    <img src="../images/chart-line-up-duotone.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title"><span>Marketing</span></h5>
-                        <p class="f-size font">Helping your brand tell stories that inspire and connect. Taking your
-                            message further, reaching hearts and minds.</p>
+                <div class="service-card">
+                    <img src="../images/chart-line-up-duotone.png" alt="Marketing">
+                    <div class="card-content">
+                        <h3><span>Marketing</span></h3>
+                        <p>Helping your brand tell stories that inspire and connect.</p>
                     </div>
                 </div>
-                <div class="card d-flex align-items-center">
-                    <img src="../images/stack-fill.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title"><span>Brand Design</span></h5>
-                        <p class="f-size font">Creating designs that speak volumes without saying a word. Making your
-                            brand stand out in a crowded world.</p>
+                <div class="service-card">
+                    <img src="../images/stack-fill.png" alt="Brand Design">
+                    <div class="card-content">
+                        <h3><span>Brand Design</span></h3>
+                        <p>Creating designs that speak volumes without saying a word.</p>
                     </div>
                 </div>
             </div>
         </section>
-        <br><br><br><br><br><br>
-        <!--gullery section-->
-        <section class="container-xxl d-grid center">
-            <h2>My Gullery</h2>
-            <div class="slider">
-                <div class="slide-track">
-                    <!--order of pictures-->
-                    <div class="slide">
-                        <img src="../images/peace.jpg" alt="img">
-                    </div>
-                    <div class="slide">
-                        <img src="../images/download (3).jpg" alt="img">
-                    </div>
-                    <div class="slide">
-                        <img src="../images/DoGE.png" alt="img">
-                    </div>
-                    <div class="slide">
-                        <img src="../images/tphoto2.png"
-                            alt="img">
-                    </div>
-                    <div class="slide">
-                        <img src="../images/pjjj.png" alt="img">
-                    </div>
-                    <div class="slide">
-                        <img src="../images/porkdeli.png" alt="img">
-                    </div>
-                    <div class="slide">
-                        <img src="../images/screenshot (3).png" alt="img">
-                    </div>
-                    <div class="slide">
-                        <img src="../images/tphoto.png" alt="img">
-                    </div>
 
-                    <!-- double the slides-->
-                    <div class="slide">
-                        <img src="../images/@itsamyruth.jpg" alt="img">
-                    </div>
-                    <div class="slide">
-                        <img src="../images/Black couples.jpg" alt="img">
-                    </div>
-                    <div class="slide">
-                        <img src="../images/Baby brent 🥺.jpg" alt="img">
-                    </div>
-                    <div class="slide">
-                        <img src="../images/Boys of Volta - Photographs by Jeremy Snell _ Text by Liz Sales _ LensCulture.jpg"
-                            alt="img">
-                    </div>
-                    <div class="slide">
-                        <img src="../images/download (3).jpg" alt="img">
-                    </div>
-                    <div class="slide">
-                        <img src="../images/download.jpg" alt="img">
-                    </div>
-                    <div class="slide">
-                        <img src="../images/Meet the photographer capturing life in Lagos, Nigeria.jpg" alt="img">
-                    </div>
-                    <div class="slide">
-                        <img src="../images/Stroke of sun.jpg" alt="img">
-                    </div>
-                </div>
-
-            </div>
-
-        </section>
-        <br><br><br><br><br><br><br><br>
-        <!--workflow section-->
-        <section class="container-xxl d-flex flex-column justify-content-evenly align-items-center">
-            <div class="heading">
-                <h1>Work-Flow</h1>
-            </div>
-            <div class="cards d-flex align-items-center justify-content-evenly">
-                <div class="card d-flex align-items-center">
-                    <img src="../images/align-center-horizontal-fill.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">6+</h5>
-                        <p class="card-text">Projects</p>
-                    </div>
-                </div>
-                <div class="card d-flex align-items-center">
-                    <img src="../images/chart-line-up-duotone.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">28</h5>
-                        <p class="card-text">Customers</p>
-                    </div>
-                </div>
-                <div class="card d-flex align-items-center">
-                    <img src="../images/stack-fill.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">3 years</h5>
-                        <p class="card-text">Experience</p>
-                    </div>
-                </div>
+        <!-- Mini Contact Form -->
+        <section class="mini-contact" id="contact">
+            <div class="mini-contact-container">
+                <h3>Got a project in mind?</h3>
+                <form class="mini-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <button type="submit">Let's Talk</button>
+                </form>
             </div>
         </section>
-        <!--footer section-->
-        <br><br><br><br><br><br><br><br>
-        <section class="container-xxl">
-            <div class="con">
-                <div class="link1">
+
+        <!-- Footer Section -->
+        <footer class="footer-section">
+            <div class="footer-container">
+                <div class="social-links">
                     <ul>
-                        <li><a href="#" class="size font">Gullery</a></li>
-                        <li><a href="#" class="size font">Contact</a></li>
-                        <li><a href="#" class="size font">Support</a></li>
+                        <li><a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
+                        <li><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
                     </ul>
                 </div>
-                <div class="link2">
-                    <ul>
-                        <li><a href="#"><i class="fa-brands size fa-github"></i></a></li>
-                        <li><a href="#"><i class="fa-brands size fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fa-brands size fa-linkedin"></i></a></li>
-                    </ul>
+                <div class="copyright">
+                    <p class="font">@yamieNyirenda</p>
                 </div>
-                <br><br><br>
-                <p class="font">@yamieNyirenda</p>
             </div>
-        </section>
+        </footer>
     </main>
 
+    <!-- JavaScript Files -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/js.js"></script>
 </body>
-
 </html>
