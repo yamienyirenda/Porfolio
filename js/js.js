@@ -7,7 +7,7 @@ const typed = new Typed('#typed-text', {
 });
 
 // Counter Animation
-document.addEventListener('DOMContentLoaded', () => {
+function animateCounters() {
     const counters = document.querySelectorAll('.stat-number');
     const speed = 200;
     
@@ -17,17 +17,13 @@ document.addEventListener('DOMContentLoaded', () => {
         const increment = target / speed;
 
         if (count < target) {
-            const updateCount = () => {
-                const newCount = Math.ceil(count + increment);
-                counter.innerText = newCount > target ? target : newCount;
-                if (newCount < target) {
-                    setTimeout(updateCount, 1);
-                }
-            };
-            updateCount();
+            counter.innerText = Math.ceil(count + increment);
+            setTimeout(animateCounters, 1);
+        } else {
+            counter.innerText = target;
         }
     });
-});
+}
 
 // Dark/Light Mode Toggle
 document.querySelector('.theme-toggle').addEventListener('click', () => {
@@ -35,12 +31,18 @@ document.querySelector('.theme-toggle').addEventListener('click', () => {
     localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
 });
 
-// Check for saved preference
-if (localStorage.getItem('darkMode') === 'true') {
-    document.body.classList.add('dark-mode');
-}
+// Initialize Particles
+particlesJS.load('particles-js', 'particles.json', function() {
+    console.log('Particles.js loaded - callback executed');
+});
 
-// Particles.js Background
-particlesJS.load('particles-js', 'js/particles.json', function() {
-    console.log('Particles.js loaded');
+// Initialize everything when DOM is loaded
+document.addEventListener('DOMContentLoaded', () => {
+    // Load dark mode preference
+    if (localStorage.getItem('darkMode') === 'true') {
+        document.body.classList.add('dark-mode');
+    }
+    
+    // Initialize counters
+    setTimeout(animateCounters, 500);
 });
