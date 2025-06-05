@@ -1,4 +1,5 @@
 /* Base Styles */
+
 :root {
   --primary-color: #229799;
   --text-color: #333;
@@ -81,12 +82,42 @@ body.dark-mode {
   color: #f8f9fa;
 }
 
-body.dark-mode .header-container,
-body.dark-mode .service-card,
-body.dark-mode .stat-card {
-  background-color: #1e1e1e;
+body.dark-mode .header-container
+{
+  background: #255F38;
+   color: #f8f9fa;
+ }
+body.dark-mode .hero-section,
+body.dark-mode .about-section,
+body.dark-mode .stats-section,
+body.dark-mode .services-section,
+body.dark-mode .gallery-page,
+body.dark-mode .mini-contact
+{
+  background: #18230F;
+   color: #f8f9fa;
+ border-bottom:.5px solid #1a7a7a;
+ }
+
+ body.dark-mode .image-background,
+ body.dark-mode .btn
+ {
+  background-color: #1F7D53;
+  border: none;
+ }
+ body.dark-mode .btn:hover{
+  background-color: #229799;
+ }
+ body.dark-mode .service-card,
+ body.dark-mode .mini-form input
+ {
+  background: #27391C;
+  border: none;
+ }
+ body.dark-mode .service-card .card-content p{
   color: #f8f9fa;
-}
+ }
+
 
 body.dark-mode .theme-toggle {
   background: #333;
