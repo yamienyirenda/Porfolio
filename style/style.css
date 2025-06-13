@@ -149,7 +149,7 @@ h1, h2, h3 {
   justify-content: space-between;
   align-items: center;
   padding: var(--space-md) var(--space-lg);
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: rgba(34, 151, 153, 0.288) 0px 8px 24px;
   position: sticky;
   top: 0;
   background: white;
@@ -272,7 +272,7 @@ section {
   width: 60%;
   height: 60%;
   position: absolute;
-  background-color: rgba(34, 151, 153, 0.1);
+  background-color: rgba(34, 151, 153, 0.478);
   bottom: 0;
   left: 0;
   z-index: 1;
