@@ -1,171 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Yamie Nyirenda</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- JS Libraries -->
+  <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
 
 <body>
-    <!-- Particles Background -->
-    <div id="particles-js"></div>
-    
-    <header>
-        <div class="header-container">
-            <div class="logo font">
-                <h1>Portfolio</h1>
-            </div>
-            <div class="links">
-                <ul class="nav-links">
-                    <li><a class="nav-link font" href="index.html">Home</a></li>
-                    <li><a class="nav-link font" href="gallery.html">Gallery</a></li>
-                    <li><a class="nav-link font" href="about.html">About</a></li>
-                    <li><a class="nav-link font" href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="theme-toggle">
-                <i class="fas fa-moon"></i>
-                <i class="fas fa-sun"></i>
-            </div>
-            <div class="side-menu">
-                <i class="fa-solid fa-bars"></i>
-            </div>
+
+  <!-- Particles -->
+  <div id="particles-js"></div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-container">
+      <h1 class="logo">Portfolio</h1>
+
+      <nav class="nav">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="theme-toggle">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+      </div>
+
+      <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </header>
+
+  <main id="home">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1>
+            Hi, I'm <span>Yamie Nyirenda</span>
+          </h1>
+          <p class="hero-role">
+            I'm a <span id="typed-text"></span>
+          </p>
+          <p class="hero-location">
+            Senior Developer at NACIT | Lilongwe, Malawi
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-outline-secondary">Hire Me</a>
+          </div>
         </div>
-    </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section class="hero-section">
-            <div class="hero-container">
-                <div class="hero-info">
-                    <h1 class="hero-greeting">Hi, I'm <span class="hero-name">Yamie Nyirenda</span></h1>
-                    <div class="hero-text-wrapper">
-                        <p class="hero-text">I'm a <span id="typed-text"></span></p>
-                    </div>
-                    <p class="hero-location">Senior Developer at NACIT | Lilongwe, Malawi</p>
-                    <div class="hero-buttons">
-                        <a href="#contact" class="btn btn-primary">Hire Me</a>
-                        <a href="resume.pdf" download class="btn btn-outline">
-                            <i class="fas fa-download"></i> Download CV
-                        </a>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <div class="image-background"></div>
-                    <div class="profile-image"></div>
-                </div>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section class="about-section">
-            <div class="about-container">
-                <div class="about-animation">
-                    <dotlottie-player src="https://lottie.host/c9037871-3f2c-4ace-8210-f92494444b64/xT8ORtBOOD.json"
-                        background="transparent" speed="1" style="width: 300px; height: 300px;" loop
-                        autoplay></dotlottie-player>
-                </div>
-                <div class="about-info">
-                    <p class="about-intro">A Young Developer from</p>
-                    <span class="about-country font"><strong>MALAWI</strong></span>
-                    <p class="about-bio">
-                        My name is Yamikani Nyirenda, I am from Malawi, and i have just completed my advanced diploma
-                        in IT at NACIT, Lilongwe. I come from a Nuclear family, my hobbies is self development, listening to Music, 
-                        playing sports,and Building Projects. I am a self motivating person, hardworker, with a good communication skill.
-                        I am a quick leaner, my long term Goal is to link with other motivators, multi-Billion companies, and 
-                        build and achieve a Goals.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Stats Counter Section -->
-        <section class="stats-section">
-            <div class="stats-container">
-                <div class="stat">
-                    <span class="stat-number" data-target="28">0</span>
-                    <p>Happy Clients</p>
-                </div>
-                <div class="stat">
-                    <span class="stat-number" data-target="15">0</span>
-                    <p>Completed Projects</p>
-                </div>
-                <div class="stat">
-                    <span class="stat-number" data-target="3">0</span>
-                    <p>Years Experience</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Services Section -->
-        <section class="services-section">
-            <div class="section-heading">
-                <h1>My Services</h1>
-            </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <img src="images/align-center-horizontal-fill.png" alt="UI/UX Design">
-                    <div class="card-content">
-                        <h3><span>UI&UX</span></h3>
-                        <p>I turn complex looking problems into beautiful, simple, and easy to understand solutions.</p>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <img src="images/chart-line-up-duotone.png" alt="Marketing">
-                    <div class="card-content">
-                        <h3><span>Marketing</span></h3>
-                        <p>I dont just sell products, I bring value to products.</p>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <img src="images/stack-fill.png" alt="Brand Design">
-                    <div class="card-content">
-                        <h3><span>Brand Design</span></h3>
-                        <p>I design brands that  connects and speak more without saying a word.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Mini Contact Form -->
-        <section class="mini-contact" id="contact">
-            <div class="mini-contact-container">
-                <h3>Got a project in mind?</h3>
-                <form class="mini-form">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <button type="submit" class="btn btn-primary">Let's Talk</button>
-                </form>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer Section -->
-    <footer class="footer-section">
-        <div class="footer-container">
-            <div class="social-links">
-                <ul>
-                    <li><a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
-                    <li><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
-                </ul>
-            </div>
-            <div class="copyright">
-                <p class="font">@yamieNyirenda</p>
-            </div>
+        <div class="hero-image">
+          <div class="image-background"></div>
+          <div class="profile-image"></div>
         </div>
-    </footer>
+      </div>
+    </section>
 
-    <!-- JavaScript -->
-    <script src="js/js.js"></script>
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+      <h2 class="section-title">Featured Projects</h2>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3>Social Media Campaigns</h3>
+          <p>Educational platform teaching teenagers safe and positive social media usage.</p>
+          <a href="#" class="project-link">View Project →</a>
+        </article>
+
+        <article class="project-card">
+          <h3>Community Emergency Alert App</h3>
+          <p>C# application for real-time emergency notifications within communities.</p>
+          <a href="#" class="project-link">View Project →</a>
+        </article>
+
+        <article class="project-card">
+          <h3>Pork Deli Website</h3>
+          <p>Brand website for a local butcher business in Lilongwe.</p>
+          <a href="#" class="project-link">View Project →</a>
+        </article>
+      </div>
+
+      <div class="section-cta">
+        <a href="gallery.html" class="btn btn-primary">See All Projects</a>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+      <h2 class="section-title">My Services</h2>
+
+      <div class="services-grid">
+        <article class="service">
+          <img src="images/align-center-horizontal-fill.png" alt="UI UX">
+          <h3>UI & UX Design</h3>
+          <p>I design clean, intuitive, and user-centered interfaces.</p>
+        </article>
+
+        <article class="service">
+          <img src="images/chart-line-up-duotone.png" alt="Marketing">
+          <h3>Digital Marketing</h3>
+          <p>I help brands grow by creating value-driven strategies.</p>
+        </article>
+
+        <article class="service">
+          <img src="images/stack-fill.png" alt="Brand Design">
+          <h3>Brand Design</h3>
+          <p>I build strong brand identities that communicate clearly.</p>
+        </article>
+      </div>
+
+      <div class="section-cta">
+        <a href="#contact" class="btn btn-outline-primary">Request a Service</a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about">
+      <div class="about-container">
+        <dotlottie-player
+          src="https://lottie.host/c9037871-3f2c-4ace-8210-f92494444b64/xT8ORtBOOD.json"
+          background="transparent"
+          speed="1"
+          style="width:300px;height:300px;"
+          loop autoplay>
+        </dotlottie-player>
+
+        <div class="about-content">
+          <h2>About Me</h2>
+          <p>
+            I’m a motivated IT graduate from NACIT, passionate about building digital
+            products that solve real problems and create impact.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="mini-contact" id="contact">
+      <div class="mini-contact-container">
+        <h3>Let’s Build Something Together</h3>
+        <p>Have a project or idea? I’m available for freelance and collaborations.</p>
+
+        <form class="mini-form">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+
+      <div class="footer-info">
+        <h3>Yamie Nyirenda</h3>
+        <p>Senior Developer • UI/UX Designer</p>
+        <p><i class="fas fa-envelope"></i> yamie@email.com</p>
+        <p><i class="fas fa-phone"></i> +265 XXX XXX XXX</p>
+        <p><i class="fas fa-location-dot"></i> Lilongwe, Malawi</p>
+      </div>
+
+      <ul class="social-links">
+        <li><a href="#"><i class="fab fa-github"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+      </ul>
+
+      <p class="copyright">
+        © 2026 Yamie Nyirenda. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/js.js"></script>
 </body>
 </html>
