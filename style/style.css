@@ -602,7 +602,7 @@ body.dark-mode .project-card {
 
   display: flex;
   align-items: center;
-  gap: 3rem;
+  gap:16rem;
 }
 
 .about-content {
