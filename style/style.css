@@ -571,6 +571,7 @@ body.dark-mode .project-card {
 ================================ */
 @media (max-width: 900px) {
   .hero-container {
+    padding-top: 16%;
     flex-direction: column;
   }
 
